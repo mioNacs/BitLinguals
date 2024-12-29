@@ -120,7 +120,7 @@ nav:hover {
     color: #fdaf09; /* Yellow color for the title */
     /* text-shadow: 0 0 10px rgba(255, 165, 0, 0.2); Soft glowing effect */
 }
-#home img{
+.Homee img{
     max-width: 300px;
     border-radius: 150px;
     border-style: solid;
@@ -193,13 +193,48 @@ nav:hover {
     background-color: #fdaf09;
     border-radius: 19px;
 }
-#Homee{
+.Homee{
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    max-width: 80%;
+    margin: auto;
 }
+.SectionH2 a{
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.SectionH2 a:hover{
+    color: #fdaf09;
+}
+hr{
+    max-width: 40%;
+}
+.SectionH2{
+    font-size: 3rem;
+    color: white;
+}
+#Sections .Homee{
+    padding-top: 20px;
+}
+.Homee .one img{
+    border-radius: 0px;
+    border-style: none;
+    box-shadow: none ;
+    max-width: 263px ;
+    transition: 0.3s ease-in-out;
+}
+.Homee .one img:hover{
+    filter: drop-shadow(0 0 15px #fdaf09);
+    max-width: 267px;
+}
+
 
 
 /* Mobile View */
@@ -211,15 +246,40 @@ nav:hover {
         height: 45px;
         margin-right: 10px;
     }
-    #Homee {
-        display: block;  
+    .Homee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .Homee .one {
+    order: -1;
+    
+}
+    .Homee section {
+        text-align: center;
+    }
+    .Homee img{
+        max-width: 230px ;
+    }
+    #home h1{
+        font-size: 35px;
+    }
+    #home h2{
+        font-size: 30px;
+    }
+    #home p{
+        font-size: 20px;
+    }
+    nav{
+        padding: 5px 23px;
     }
     .nav-links {
         display: none; /* Hidden initially for mobile */
         flex-direction: column;
         width: 40%;
         position: absolute;
-        top: 100px;
+        top: 60px;
         left: 78%; /* Center-align */
         transform: translateX(-50%); /* Align center properly */
         background-color: #fdaf09; /* Modern dark gray background */
@@ -248,7 +308,33 @@ nav:hover {
     padding: 10px 20px;
     transition: 0.3s;
 }
+.Homee .one img{
+    max-width: 170px;
 }
+.Homee .one img:hover{
+    max-width: 173px;
+}
+#Sections h2{
+    font-size: 20px;
+}
+#Sections p{
+    font-size: 15px;
+}
+
+
+}
+@media (max-width:500px){
+#HomeChild p a:hover{
+    color: white;
+    background-color: transparent;
+}
+#HomeChild{
+    max-width: 67%;
+    padding: 30px;
+}
+}
+
+
 
 /* Smooth dropdown animation */
 @keyframes slideFadeDown {
