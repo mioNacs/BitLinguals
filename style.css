@@ -1,367 +1,462 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #162f4d;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #162f4d;
 }
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
 }
 
 /* Navbar */
 nav {
-    margin: 20px;
-    margin-top: 15px;
-    border-radius: 40px;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: #fdaf09;
-    color: black;
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3); /* Glowing effect around navbar */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for glowing effect */
-    position: fixed; /* Fixes the navbar to the top */
-    top: 0; /* Positions the navbar at the top of the page */
-    right: 0; /* Aligns the navbar to the right */
-    z-index: 1000; /* Ensures the navbar stays on top of other content */
+  margin: 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fdaf09;
+  color: black;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.3); /* Glowing effect around navbar */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for glowing effect */
+  position: fixed; /* Fixes the navbar to the top */
+  top: 0; /* Positions the navbar at the top of the page */
+  right: 0; /* Aligns the navbar to the right */
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
 }
 
 nav:hover {
-    box-shadow: 0 0 25px rgba(255, 165, 0, 0.7); /* Glowing effect on hover */
+  box-shadow: 0 0 25px rgba(255, 165, 0, 0.7); /* Glowing effect on hover */
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 50px;
-    margin-right: 10px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
-    font-family: 'Source Code Pro', monospace;
-    text-decoration: none;
-    color: #162f4d;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-    justify-content: end;
+  font-family: "Source Code Pro", monospace;
+  text-decoration: none;
+  color: #162f4d;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  justify-content: end;
 }
 
 .nav-links li a:hover {
-    background-color: #162f4d;
-    color: #00ff00; /* Neon green hover effect */
-    border-radius: 15px;
-    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Glowing box shadow */
+  background-color: #162f4d;
+  color: #00ff00; /* Neon green hover effect */
+  border-radius: 15px;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Glowing box shadow */
 }
-
-
 
 /* Hamburger Menu */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 4px;
-    /* border-style:solid;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 4px;
+  /* border-style:solid;
     border-color: #162f4d; */
-    border-radius: 11px;
+  border-radius: 11px;
 }
 
 .hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: #162f4d;
-    margin: 4px 0;
-    transition: 0.4s;
+  height: 3px;
+  width: 25px;
+  background-color: #162f4d;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 .hamburger:hover {
-    background-color: #162f4d;
-    padding: 4px;
-    color: #00ff00; /* Neon green hover effect */
-    border-radius: 3px;
-    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Glowing box shadow */
+  background-color: #162f4d;
+  padding: 4px;
+  color: #00ff00; /* Neon green hover effect */
+  border-radius: 3px;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Glowing box shadow */
 }
 .hamburger:hover span {
-    background-color: #00ff00; /* Neon green color for the span */
+  background-color: #00ff00; /* Neon green color for the span */
 }
-
+#Hero {
+  background-image: url("media/bg1.jpg");
+  /* background-color: white; */
+  margin-top: -7rem;
+  background-size: cover; /* Scale image to cover entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-attachment: fixed;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+#HeroText {
+  color: white !important;
+}
+#Hero p{
+    filter: drop-shadow(2px 2px 5px black);
+}
 /* Home Section */
 #home {
-    margin-top: 6rem ;
-    padding: 2px 2px;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    box-shadow: inset;
+  margin-top: 6rem;
+  padding: 2px 2px;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  box-shadow: inset;
 }
-#HomeChild:hover{
-    box-shadow: 0 0 25px rgba(255, 165, 0, 0.7); /* Glowing effect on hover */
-    transition: box-shadow 0.3s ease-in-out;
+#HomeChild:hover {
+  box-shadow: 0 0 25px rgba(255, 165, 0, 0.7); /* Glowing effect on hover */
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 #home h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    color: #fdaf09; /* Yellow color for the title */
-    /* text-shadow: 0 0 10px rgba(255, 165, 0, 0.2); Soft glowing effect */
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: 4rem;
+  color: #fdaf09; /* Yellow color for the title */
+  /* text-shadow: 0 0 10px rgba(255, 165, 0, 0.2); Soft glowing effect */
 }
-.Homee img{
-    max-width: 300px;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #fdaf09;
-    box-shadow: 0 0 10px rgba(253, 175, 9, 0.8);
-
+.Homee img {
+  max-width: 300px;
+  border-radius: 150px;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0 0 10px rgba(253, 175, 9, 0.8);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
 }
 
 #home p {
-    font-size: 1.4rem;
-    color: wheat;
-    line-height: 1;
-    max-width: 800px;
-    margin: auto;
+  font-size: 1.4rem;
+  color: wheat;
+  line-height: 1;
+  max-width: 800px;
+  margin: auto;
 }
 #pHome {
-    display: inline; /* Makes the <p> tag inline */
+  display: inline; /* Makes the <p> tag inline */
 }
 
 #h2Home {
-    display: inline; /* Makes the <h1> tag inline */
-    color: wheat;
-    font-size: 2rem;
+  display: inline; /* Makes the <h1> tag inline */
+  color: wheat;
+  font-size: 2rem;
 }
 #HomeChild {
-    border-style:solid ;
-    padding: 50px;
-    padding-top: 0px !important;
-    margin-bottom: 3rem !important;
-    background-color: #162f4d;
-    border-color: #fdaf09;
-    border-radius: 20px;
-    max-width: 70%;
-    margin:  auto;
-
-    /* Scroll Settings */
-    max-height: 300px; /* Set a fixed height for scrollable area */
-    overflow-y: auto; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Thin scrollbar for modern browsers */
-    scrollbar-color: #fdaf09 #162f4d; /* Custom scrollbar color */
+  /* border-style:solid ; */
+  padding: 50px;
+  margin-bottom: 3rem !important;
+  background-color: #163f6d;
+  /* border-color: #fdaf09; */
+  border-radius: 20px;
+  max-width: 60%;
+  margin: auto;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+  /* Scroll Settings */
+  max-height: 250px; /* Set a fixed height for scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* For Webkit Browsers */
 #HomeChild::-webkit-scrollbar {
-    width: 8px;
+  display: none;
+}
+#HomeChild p a ,.Session-child a{
+  font-family: "Source Code Pro", monospace;
+  text-decoration: none;
+  color: #fdaf09;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.Session-child a{
+  font-size: 20px;
+}
+#HomeChild p a:hover,.Session-child a:hover {
+  color: #162f4d;
+  background-color: #fdaf09;
+  border-radius: 19px;
+}
+.Homee {
+  background-color: #162f4d;
+  display: flex;
+  margin-bottom: 4rem !important;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 80%;
+  margin: auto;
+}
+.Sections {
+  margin: 0px;
+  display: flex;
+  overflow: hidden; /* Hide overflowing content */
+  scroll-behavior: smooth;
+  height: 100%; /* Viewport height */
+}
+.SectionH2 a {
+  font-family: "Source Code Pro", monospace;
+  text-decoration: none;
+  color: #162f4d;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.SectionH2 a:hover {
+  color: #fdaf09;
+}
+.SectionH2 {
+  font-size: 3rem;
+  color: #162f4d;
+}
+.Session-child .SectionH2 {
+  font-size: 2rem;
+}
+.Session-child ul {
+  text-align: left;
+  font-size: 18px;
+}
+#home .Sections .Homee p {
+  color: black;
+}
+.Sections .Homee .Section-child {
+  display: flex;
+}
+.Sections .Homee {
+  /* border-style: solid; */
+  /* border-color: #fdaf09; */
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px !important;
+  padding: 40px;
+  flex: 0 0 100%; /* Full width for each slide */
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+/* Navigation dots */
+#nav-dots {
+  margin-bottom: 2rem;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-#HomeChild::-webkit-scrollbar-thumb {
-    background-color: #fdaf09;
-    border-radius: 10px;
+.dot,
+.dott {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-#HomeChild::-webkit-scrollbar-thumb:hover {
-    background-color: #ffc107; /* Slightly lighter on hover */
+.dot.active,
+.dott.active {
+  background-color: #fdaf09; /* Highlight active dot */
 }
 
-#HomeChild::-webkit-scrollbar-track {
-    background-color: #162f4d; /* Track background color */
+/* Hide scrollbar */
+.Sections::-webkit-scrollbar {
+  display: none;
 }
-#HomeChild p a{
-    font-family: 'Source Code Pro', monospace;
-    text-decoration: none;
-    color: #fdaf09;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
+.Homee .one img {
+  border-radius: 0px;
+  border-style: none;
+  box-shadow: none;
+  max-width: 263px;
+  transition: 0.3s ease-in-out;
 }
-#HomeChild p a:hover{
-    color: #162f4d;
-    background-color: #fdaf09;
-    border-radius: 19px;
+.Homee .one img:hover {
+  filter: drop-shadow(0 0 15px #fdaf09);
+  max-width: 267px;
 }
-.Homee{
-    display: flex;
-    margin-bottom: 4rem !important;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    max-width: 80%;
-    margin: auto;
-}
-.SectionH2 a{
-    font-family: 'Source Code Pro', monospace;
-    text-decoration: none;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.SectionH2 a:hover{
-    color: #fdaf09;
-}
-hr{
-    max-width: 40%;
-}
-.SectionH2{
-    font-size: 3rem;
-    color: white;
-}
-#Sections .Homee{
-    padding-top: 20px;
-}
-.Homee .one img{
-    border-radius: 0px;
-    border-style: none;
-    box-shadow: none ;
-    max-width: 263px ;
-    transition: 0.3s ease-in-out;
-}
-.Homee .one img:hover{
-    filter: drop-shadow(0 0 15px #fdaf09);
-    max-width: 267px;
+/* Footer Styles */
+footer {
+  background-color: #163f6d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0;
+  /* width: 100%; */
 }
 
-
+.footer-container p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+}
 
 /* Mobile View */
 @media (max-width: 804px) {
-    .hamburger {
-        display: flex;
-    }
-    .logo img {
-        height: 45px;
-        margin-right: 10px;
-    }
-    .Homee {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    .Homee .one {
+  .hamburger {
+    display: flex;
+  }
+  .logo img {
+    height: 45px;
+    margin-right: 10px;
+  }
+  .Homee,
+  .Section-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .Homee .one {
     order: -1;
-    
-}
-    .Homee section {
-        text-align: center;
-    }
-    .Homee img{
-        max-width: 230px ;
-    }
-    #home h1{
-        font-size: 35px;
-    }
-    #home h2{
-        font-size: 30px;
-    }
-    #home p{
-        font-size: 20px;
-    }
-    nav{
-        padding: 5px 23px;
-    }
-    .nav-links {
-        display: none; /* Hidden initially for mobile */
-        flex-direction: column;
-        width: 40%;
-        position: absolute;
-        top: 60px;
-        left: 78%; /* Center-align */
-        transform: translateX(-50%); /* Align center properly */
-        background-color: #fdaf09; /* Modern dark gray background */
-        border-radius: 16px; /* Rounded corners */
-        padding: 10px 0;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Stronger modern shadow */
-        z-index: 10; /* Ensure it stays above other elements */
-        animation: slideDown 0.3s ease-in-out; /* Smooth drop-down effect */
-    }
+  }
+  #Hero {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  .Homee section {
+    text-align: center;
+  }
+  .Homee img {
+    max-width: 200px;
+  }
+  #home h1 {
+    font-size: 35px;
+  }
+  #home h2 {
+    font-size: 30px;
+  }
+  #home p {
+    font-size: 20px;
+  }
+  nav {
+    padding: 2px 23px;
+  }
+  .logo img {
+    height: 37px;
+  }
+  .nav-links {
+    display: none; /* Hidden initially for mobile */
+    flex-direction: column;
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    left: 78%; /* Center-align */
+    transform: translateX(-50%); /* Align center properly */
+    background-color: #fdaf09; /* Modern dark gray background */
+    border-radius: 16px; /* Rounded corners */
+    padding: 10px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Stronger modern shadow */
+    z-index: 10; /* Ensure it stays above other elements */
+    animation: slideDown 0.3s ease-in-out; /* Smooth drop-down effect */
+  }
 
-    .nav-links.show {
-        display: flex; /* Show menu when toggled */
-    }
+  .nav-links.show {
+    display: flex; /* Show menu when toggled */
+  }
 
-    /* Links inside navbar */
-.nav-links li {
+  /* Links inside navbar */
+  .nav-links li {
     text-align: center;
     padding: 10px 0;
-}
+  }
 
-.nav-links li a {
+  .nav-links li a {
     color: #162f4d; /* Light text color */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 20px;
     transition: 0.3s;
-}
-.Homee .one img{
+  }
+  .Homee .one img {
     max-width: 170px;
-}
-.Homee .one img:hover{
+  }
+  .Homee .one img:hover {
     max-width: 173px;
-}
-#Sections h2{
+  }
+  .Sections .Homee {
+    padding: 20px;
+  }
+  .Sections h2 {
     font-size: 20px;
-}
-#Sections p{
+  }
+  .Sections p {
     font-size: 15px;
+  }
+  .Session-child .SectionH2 {
+    font-size: 25px !important;
+  }
 }
-
-
-}
-@media (max-width:500px){
-#HomeChild p a:hover{
+@media (max-width: 500px) {
+  #HomeChild p a:hover {
     color: white;
     background-color: transparent;
-}
-#HomeChild{
+  }
+  #HomeChild {
     max-width: 67%;
     padding: 30px;
+  }
+  footer {
+    padding: 10px;
+  }
 }
-}
-
-
 
 /* Smooth dropdown animation */
 @keyframes slideFadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-15px) scale(0.95); /* Start slightly smaller */
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(-5px) scale(1.02); /* Slight bounce effect */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1); /* Settle into final position */
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-15px) scale(0.95); /* Start slightly smaller */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px) scale(1.02); /* Slight bounce effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Settle into final position */
+  }
 }
 
-@media(min-width: 805px) {
-    nav {
-        width: 720px;
-        margin-left: auto; /* Aligns the nav to the right */
-        position: fixed; /* Fixes the navbar to the top */
-        top: 0; /* Positions the navbar at the top of the page */
-        right: 0; /* Aligns the navbar to the right */
-        z-index: 1000; /* Ensures the navbar stays on top of other content */
-    }
+@media (min-width: 805px) {
+  nav {
+    width: 720px;
+    margin-left: auto; /* Aligns the nav to the right */
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Positions the navbar at the top of the page */
+    right: 0; /* Aligns the navbar to the right */
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+  }
+  #Sessions .Homee {
+    max-width: 500px !important;
+  }
+  #Sessions {
+    justify-content: center;
+    align-content: center;
+  }
+  .sess-dots {
+    display: none !important;
+  }
 }
-
-
-
